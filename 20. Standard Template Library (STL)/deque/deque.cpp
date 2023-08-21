@@ -30,8 +30,10 @@
 	*/
 
 
-	// Section 20
-	// Deque
+	//also, deque stores data in non-contiguos manner unlike arrays/vectors
+
+		// Section 20
+		// Deque
 #include <iostream>
 #include <deque>
 #include <vector>

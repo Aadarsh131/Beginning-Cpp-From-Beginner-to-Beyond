@@ -113,7 +113,7 @@ void string_transform_test() {
 
 	std::string str1{ "This is a test" };
 	std::cout << "Before transform: " << str1 << std::endl;
-	std::transform(str1.begin(), str1.end(), str1.begin(), ::toupper); //:: without anything before it is termed as global scope resolution (::toupper is coming from <cctype>)
+	std::transform(str1.begin(), str1.end(), str1.begin(), ::toupper); //:: without anything before it is termed as global scope resolution (::toupper is a c-type function coming from <cctype>) std::toupper is from the standard c++ libray, It is recommended to use std::toupper over ::toupper when working in a C++ program, as it provides better support for locale-specific transformations.
 	std::cout << "After transform: " << str1 << std::endl;
 }
 
